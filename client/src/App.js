@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TextField from "@material-ui/core/TextField";
 
 function App() {
+  //javascript logic goes here
+
   return (
+    //html & css go here
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Mentor Login Page!</h1>
+      <form className="login" noValidate autoComplete="off">
+        <TextField id="userName-basic" label="User Name" />
+        <TextField id="password-basic" label="Password" variant="filled" />
+      </form>
     </div>
   );
 }
